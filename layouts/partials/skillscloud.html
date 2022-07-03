@@ -1,0 +1,10 @@
+<section class="skills-section section">
+    <h2 class="section-title"><i class="fa {{ .Site.Params.skills.icon }}"></i>{{ i18n "skills" }}</h2>
+    <div class="askillcloudset">
+    <ul class="cloud" role="navigation" aria-label="Webdev word cloud">
+    {{ range .Site.Params.skillscloud.list }}
+       <li><a href="#" data-weight="{{ .level }}">{{ .skill }}</a></li>
+    {{ end }}
+    </ul>
+    </div>
+</section><!--//skills-section-->

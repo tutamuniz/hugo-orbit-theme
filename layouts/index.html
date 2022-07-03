@@ -23,6 +23,10 @@
     {{ partial "projects.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.skillscloud.enable }}
+	{{ partial "skillscloud.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.skills.enable }}
 	{{ partial "skills.html" . }}
     {{ end }}
